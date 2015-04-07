@@ -2,7 +2,9 @@
 cut-ordered
 ===========
 
-UNIX [`cut(1)`](https://en.wikipedia.org/wiki/Cut_%28Unix%29) is a great utility, but I found myself wanting to often reorder fields. This cmd utility attempts to be similar in terms of API to `cut(1)` but respects the given column order.
+An implementation of `cut(1)` that allows reordering of fields.
+
+UNIX [`cut(1)`](https://en.wikipedia.org/wiki/Cut_%28Unix%29) is a great utility, but I found myself wanting to often reorder fields. This cmd utility attempts to be similar in terms of API to `cut(1)` but respects the given column order. This is especially useful when wanting to sort data numerically.
 
 Usage
 --------
