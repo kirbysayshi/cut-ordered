@@ -1,15 +1,15 @@
 {
-  "name": "cut-order",
+  "name": "cut-ordered",
   "version": "0.0.0",
-  "description": "Like unix's cut(1) except columns can be reordered",
+  "description": "Like unix's cut(1) except columns can be reordered, and within ~1.3x speed.",
   "main": "index.js",
   "bin": {
-    "cut-order": "cut-order.js"
+    "cut-ordered": "bin/cli.js"
   },
   "scripts": {
     "generate-fixtures": "node -e 'for(i=0;i<1000000;i++)console.log(Math.random()+\"\\t\"+Math.random()+\"\\t\"+Math.random()+\"\\t\")' > test/3-col.tsv",
     "test": "tape test/*.js",
-    "bench": "npm run generate-fixtures && echo 'cut' && time cut -f 3,2,1 ./test/3-col.tsv > /dev/null && echo '' && echo 'cut-order' && time node bin/cut-order -f 3,2,1 ./test/3-col.tsv > /dev/null"
+    "bench": "npm run generate-fixtures && echo 'cut' && time cut -f 3,2,1 ./test/3-col.tsv > /dev/null && echo '' && echo 'cut-ordered' && time node bin/cli.js -f 3,2,1 ./test/3-col.tsv > /dev/null"
   },
   "keywords": [
     "cut",
