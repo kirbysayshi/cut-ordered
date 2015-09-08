@@ -19,6 +19,7 @@
     "cli"
   ],
   "author": "Drew Petersen <kirbysayshi@gmail.com>",
+  "repository": "kirbysayshi/cut-ordered",
   "license": "MIT",
   "dependencies": {
     "minimist": "^1.1.1",
