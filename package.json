@@ -1,6 +1,6 @@
 {
   "name": "cut-ordered",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Like unix's cut(1) except columns can be reordered, and within ~1.3x speed.",
   "main": "index.js",
   "bin": {
